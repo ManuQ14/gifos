@@ -150,7 +150,7 @@ function uploadGifCallback() {
     cancelGif.classList.replace("cancel-hidden", "cancel-btn");
     secondaryButton.classList.add("hidden");
     buttonsUpload.classList.replace("buttons-upload", "buttons-hidden");
-} 
+}
 
 
 

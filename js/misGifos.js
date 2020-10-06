@@ -57,6 +57,7 @@ window.addEventListener('load', () => {
         misgifosContainer.appendChild(gridContainer);
     });
 })
+
 function getMygif() {
     let mygif = [];
     for (var i = 0; i < localStorage.length; i++) {
@@ -64,5 +65,6 @@ function getMygif() {
         if (localStorage.key(i).startsWith('myGif')) {
             mygif.push(JSON.parse(item));
         }
-    } return mygif
+    }
+    return mygif
 }
