@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/themeDark.css">
+    <link rel="stylesheet" href="styles/themeLight.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <title>Gifos</title>
+</head>
+
+<body class="themeLight">
+    <nav class="nav-bar">
+        <span>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</span>
+    </nav>
+
+    <div class="main-container">
+        <header>
+            <a href="index.html">
+                <div class="logo"></div>
+            </a>
+
+            <div class="button-container">
+                <div id="crearGif">
+                    <div class="dots">
+                        <a href="upload.html">Crear Gifos</a>
+                    </div>
+                </div>
+
+                <div class="botonera">
+                    <div id="elegirTema">
+                        <div class="dots-theme">Elegir tema</div>
+                    </div>
+
+                    <div class="button-themes hide-themes">
+                        <div class="button-inactive" id="day">Sailor Day</div>
+                        <div class="button-inactive" id="night">Sailor Night</div>
+                    </div>
+                </div>
+
+                <div id="dropdown">
+                    <div class="dots-dropdown">
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+                <div class="dots-link">
+                    <a href="index.html" class="header-link"><span class="hoover-underline">B</span>ack</a>
+                </div>
+            </div>
+        </header>
+        
+
+    </div>
+    <div class="title-box title-box-div">Mis gifos</div>
+    <div class="misgifos-container"></div>
+    <div class="suggestions-results">
+        <div class="search-suggestion-wrapper hidden">
+            <div class="search-result button-results">
+                <div class="suggest-dots" data-search="Tecnología">#Tecnología</div>
+            </div>
+            <div class="search-result button-results">
+                <div class="another-result" data-search="Fotografía">#Fotografía</div>
+            </div>
+            <div class="search-result button-results">
+                <div class="another-result" data-search="Programacion">#Programacion</div>
+            </div>
+        </div>
+        <div class="btn hidden">
+            <div class="btn-related" data-search="Música">#Música</div>
+            <div class="btn-related" data-search="Mascotas">#Mascotas</div>
+            <div class="btn-related" data-search="Fútbol">#Fútbol</div>
+        </div>
+    
+    </div>
+
+
+
+        <script src="js/misGifos.js"></script>
+</body>
+
+</html>

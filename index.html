@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/themeDark.css">
+    <link rel="stylesheet" href="styles/themeLight.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <title>Gifos</title>
+</head>
+
+<body class="themeLight">
+    <nav class="nav-bar">
+        <span class="span-nav">¡Bienvenidos/as a Gifos.com! ——————Donde los gifs están.////// Número de visitas:
+            12.765.803</span>
+    </nav>
+
+    <div class="main-container">
+        <header>
+            <a href="index.html">
+                <div class="logo"></div>
+            </a>
+
+            <div class="button-container">
+                <div id="crearGif">
+                    <div class="dots">
+                        <a href="upload.html">Crear Gifos</a>
+                    </div>
+                </div>
+
+                <div class="botonera">
+                    <div id="elegirTema">
+                        <div class="dots-theme">Elegir tema</div>
+                    </div>
+
+                    <div class="button-themes hide-themes">
+                        <button id="day"><span class="underline">Sailor Day</span></button>
+                        <button id="night"><span class="underline">Sailor Night</span></button>
+                    </div>
+                </div>
+
+                <div id="dropdown">
+                    <div class="dots-dropdown">
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+                <div class="dots-link">
+                    <a href="./misGifos.html" class="header-link"><span class="hoover-underline">M</span>is Gifos</a>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="search-container">
+        <div class="box-header">
+            <p>Buscar</p>
+        </div>
+        <div class="search-wrapper">
+            <input class="search-bar" placeholder="Buscá gifs y más" value="" id="search-bar">
+            <div class="search-button">
+                <div class="doted-button">
+                    <div class="lupa"></div>
+                    <p class="search">Buscar</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="suggestions-results">
+        <div class="search-suggestion-wrapper hidden">
+            <div class="search-result button-results">
+                <div class="suggest-dots" data-search="Tecnología">#Tecnología</div>
+            </div>
+            <div class="search-result button-results">
+                <div class="another-result" data-search="Fotografía">#Fotografía</div>
+            </div>
+            <div class="search-result button-results">
+                <div class="another-result" data-search="Programacion">#Programacion</div>
+            </div>
+        </div>
+        <div class="btn hidden">
+            <div class="btn-related" data-search="Música">#Música</div>
+            <div class="btn-related" data-search="Mascotas">#Mascotas</div>
+            <div class="btn-related" data-search="Fútbol">#Fútbol</div>
+        </div>
+
+    </div>
+    <div class="title-box title-box-div"> Hoy te sugerimos:</div>
+    <div class="suggestions-container"></div>
+
+    <div class="title-box title-box-div"> Tendencias:</div>
+
+    <div class="trends-container"></div>
+
+    <div class="page-results"></div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

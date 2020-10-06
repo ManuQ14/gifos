@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gifOS</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/themeLight.css">
+    <link rel="stylesheet" href="styles/themeDark.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,600;0,700;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="themeLight">
+    <nav class="nav-bar">
+        <span class="span-nav">¡Bienvenidos/as a Gifos.com! ——————Donde los gifs están.////// Número de visitas:
+            12.765.803</span>
+    </nav>
+    <div class="main-container">
+        <header class="section-header">
+            <div class="upload-header">
+                <a href="index.html">
+                <div class="back"></div>
+                </a>
+                <a href="index.html">
+                    <div class="logo-upload"></div>
+                </a>
+            </div>
+        </header>
+    </div>
+    <div class="loading-window">
+        <div class="window-title">Crear Gifos<img src="iconos/button3.svg" class="close" alt="close"></div>
+        <img src="iconos/window_img.png" alt="window" class="window-img">
+        <div class="inner-title">Aquí podrás crear tus propios gifos</div>
+        <div class="indications">
+            Crear tu <em><b>gifo</b></em> es muy fácil, graba cualquier imagen con tu cámara y obtén gifos
+            personalizados. Los
+            pasos para crear tu gifo son:<br>
+            <br><b>1)</b> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)<br>
+            <b>2)</b> Capturar tu momento gifo<br>
+            <b>3)</b> Revisar el momento<br>
+            <b>4)</b> Listo para subir y compartir!<br>
+            <br> ¿Quieres comenzar a crear tu <em><b>gifo</b></em> ahora?<br>
+        </div>
+        <div class="buttons">
+            <a href='misGifos.html'>
+                <div class="cancel">Cancelar</div>
+            </a>
+            <div class="start">Comenzar</div>
+        </div>
+    </div>
+    <div class="capture hidden">
+        <div class="capture-title">Un Chequeo Antes de Empezar<img src="iconos/button3.svg" class="close" alt="close"></div>
+        <div class="video-container">
+            <video class="video"></video>
+            <div class="uploading-gif hidden">
+                <div class="globe-img"></div>
+                <div class="gifo-status">Estamos subiendo tu gifo…</div>
+                <div class="progress-bar">
+                    <div class="progress-bar-item"></div>
+                    <div class="progress-bar-item"></div>
+                    <div class="progress-bar-item"></div>
+                    <div class="progress-bar-item"></div>
+                    <div class="progress-bar-item"></div>
+                    <div class="progress-bar-item"></div>
+                    <div class="progress-bar-item"></div>
+                    <div class="progress-bar-item"></div>
+                    <div class="progress-bar-item"></div>
+                    <div class="progress-bar-item"></div>
+                    <div class="progress-bar-item"></div>
+                    <div class="progress-bar-item"></div>
+                    <div class="progress-bar-item"></div>
+                    <div class="progress-bar-item"></div>
+                    <div class="progress-bar-item"></div>
+                    <div class="progress-bar-item"></div>
+                    <div class="progress-bar-item"></div>
+                    <div class="progress-bar-item"></div>
+                    <div class="progress-bar-item"></div>
+                    <div class="progress-bar-item"></div>
+                    <div class="progress-bar-item"></div>
+                    <div class="progress-bar-item"></div>
+                    <div class="progress-bar-item"></div>
+                </div>
+                <div class="progress-status">Tiempo restante: <span class="line-through">38 años</span> algunos minutos
+                </div>
+
+            </div>
+        </div>
+        <div class="button-capture-container">
+            <div class="button-capture-img">
+                <div class="capture-img not-recording"></div>
+            </div>
+            <div class="button-capture">Capturar</div>
+        </div>
+        <div class="timer-hidden" id="timer"></div>
+        <div class="buttons-hidden" id="uploadWrapper">
+            <div class="playbar-container">
+                <div class="fwd-btn"><img src='iconos/forward.svg' class="fwd" alt="back"></div>
+                <div class="playbar">
+                    <div class="playbar-item-on"></div>
+                    <div class="playbar-item-on"></div>
+                    <div class="playbar-item-on"></div>
+                    <div class="playbar-item-on"></div>
+                    <div class="playbar-item-on"></div>
+                    <div class="playbar-item"></div>
+                    <div class="playbar-item"></div>
+                    <div class="playbar-item"></div>
+                    <div class="playbar-item"></div>
+                    <div class="playbar-item"></div>
+                    <div class="playbar-item"></div>
+                    <div class="playbar-item"></div>
+                    <div class="playbar-item"></div>
+                    <div class="playbar-item"></div>
+                    <div class="playbar-item"></div>
+                    <div class="playbar-item"></div>
+                    <div class="playbar-item"></div>
+                </div>
+            </div>
+            <div class="uploadGif" id="repeat">
+                <div class="secondary-button">Repetir Captura</div>
+            </div>
+            <div class="uploadGif" id="upload">
+                <div class="secondary-button" >Subir Gif</div>
+            </div>
+        </div>
+        <div class="hidden" id="cancelGif">
+            <a href='misGifos.html'>
+                <div class="secondary-button">Cancelar</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="success-hidden">
+        <div class="success-title">Gifo Subido con Exito<img src="iconos/button3.svg" alt="close"></div>
+        <div class="gif-preview">
+        </div>
+        <div class="success-container">
+            <div class="success-msg">Gif creado con éxito</div>
+            <div class="success copy-link">Copiar Enlace Gifo</div>
+            <div class="success download-gif">Descargar Gif</div>
+        </div>
+        <div class="gif-ready">Listo</div>
+    </div>
+    
+    <div class="title-box title-box-div">Mis gifos</div>
+    <div class="misgifos-container"></div>
+       
+       
+       
+       
+       
+        <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+        <script src="js/upload.js"></script>
+
+
+
+</body>
+
+</html>

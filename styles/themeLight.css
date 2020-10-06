@@ -1,0 +1,494 @@
+.themeLight,
+body {
+    background-color: #fff4fd;
+}
+
+
+.themeLight .nav-bar {
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+    box-shadow: 0 1px 0 0 #110038;
+    color: white;
+}
+
+a {
+    color: #110038;
+    text-decoration: none;
+}
+
+
+
+.logo {
+    background: no-repeat url(../iconos/gifOF_logo.png);
+}
+
+
+
+#crearGif {
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    color: #110038;
+
+}
+
+
+.themeLight .dots:hover {
+    border: 1px dotted #000000;
+    box-sizing: border-box;
+    background-color: #E6BBE2;
+}
+
+.themeLight .dots:active {
+    border: 1px dotted #000000;
+    box-sizing: border-box;
+    background-color: #E6BBE2;
+}
+
+
+#elegirTema {
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    color: #110038;
+}
+
+
+
+.themeLight .dots-theme:hover {
+    border: 1px dotted #000000;
+    box-sizing: border-box;
+    background-color: #E6BBE2;
+}
+
+
+
+
+.button-themes {
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+
+}
+
+.themeLight .button-inactive {
+    background: #F0F0F0;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    color: #110038;
+
+}
+
+
+.themeLight #day {
+    background: #F0F0F0;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+
+.themeLight #day:active {
+    background: #FFF4FD;
+    border: 1px solid #CCA6C9;
+    box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.themeLight #day:active::first-letter {
+    text-decoration: underline;
+}
+
+
+
+.themeLight #night {
+    background: #F0F0F0;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.themeLight #night:active {
+    background: #FFF4FD;
+    border: 1px solid #CCA6C9;
+    box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.themeLight #night:active::first-letter {
+    text-decoration: underline;
+}
+
+
+
+.themeLight #dropdown {
+    background-color: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    color: #110038;
+
+}
+
+.themeLight .dots-dropdown:hover {
+    border: 1px dotted #000000;
+    box-sizing: border-box;
+    background-color: #E6BBE2;
+}
+
+.themeLight .dots-dropdown:active {
+    border: 1px dotted #000000;
+    box-sizing: border-box;
+    background-color: #E6BBE2;
+}
+
+
+
+
+.themeLight .arrow {
+    background-image: url(../iconos/dropdown.svg);
+}
+
+
+
+.header-link {
+    color: #110038;
+}
+
+.header-link:active {
+    color: gray;
+}
+
+
+.dots-link:hover {
+    border: 1px dotted #110038;
+    box-sizing: border-box;
+
+}
+
+
+
+/*Section search-bar*/
+
+
+.themeLight .search-container {
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+
+}
+
+.themeLight .box-header {
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+    color: white;
+}
+
+
+.themeLight .search-button {
+    background: #E6E6E6;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    color: #B4B4B4;
+}
+
+
+.themeLight .search-button:active {
+    background: #E6BBE2;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    color: #110038;
+    border: 1px dotted #000000;
+    box-sizing: border-box;
+}
+
+.themeLight .lupa {
+    background-image: url(../iconos/lupa_inactive.svg);
+}
+
+.themeLight .search-button:active .lupa {
+    background-image: url(../iconos/lupa.svg);
+}
+
+/*sugerencias busqueda */
+
+
+
+.themeLight .search-suggestion-wrapper {
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+
+.themeLight .search-result {
+    background: #F0F0F0;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+
+.themeLight .suggest-dots {
+    background-color: #DBDBDB;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    border: 1px dotted #110038;
+}
+
+
+.themeLight .button-active {
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.themeLight .button-active .doted-button .lupa {
+    background-image: url(../iconos/lupa.svg);
+}
+
+.themeLight .title-box {
+    background: #FFFAFE;
+    border: 1px solid #E6BBE2;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+
+}
+
+
+.themeLight .hashtag {
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+    color: white;
+}
+
+.themeLight .hashtag-bottom {
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+    color: #FFFFFF;
+}
+
+
+.themeLight .box-suggestions {
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+
+.themeLight .title-result {
+    background: #FFFAFE;
+    border: 1px solid #E6BBE2;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+}
+
+
+
+
+.themeLight .btn-related {
+    background: #4180F6;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -1px -1px 0 0 #284F99, inset 1px 1px 0 0 #FFFFFF;
+
+}
+
+.themeLight .see-more {
+    background: #4180F6;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -1px -1px 0 0 #284F99, inset 1px 1px 0 0 #FFFFFF;
+    color: #FFFFFF;
+}
+
+.themeLight .see-more:hover {
+    background: #3A72DB;
+    box-shadow: inset -1px -1px 0 0 #284F99, inset 1px 1px 0 0 #FFFFFF;
+}
+
+
+.themeLight .button-capture-img {
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+
+}
+
+.themeLight .button-capture {
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    color: #110038;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.themeLight .capture-img {
+    width: 18px;
+    height: 16.5px;
+    background: no-repeat url(../iconos/camera.svg);
+}
+
+
+
+/* Ventana para crear gifos: loading Window*/
+.themeLight .loading-window {
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.themeLight .window-title {
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+    color: #FFFFFF;
+}
+
+.themeLight .cancel {
+    background: #FFF4FD;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.themeLight .start {
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+/* Capture */
+.themeLight .capture {
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.themeLight .capture-title {
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+    color: #FFFFFF;
+}
+
+.themeLight .button-capture-img {
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.themeLight .not-recording {
+    background: no-repeat url(../iconos/camera.svg);
+}
+
+.themeLight .box-recording {
+    background: #FF6161;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.themeLight .button-capture {
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.themeLight .recording {
+    background: no-repeat url(../iconos/recording.svg);
+}
+
+.themeLight .ready {
+    background: #FF6161;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+    color: #FFFFFF;
+}
+
+.themeLight .logo-upload {
+    background: no-repeat url(../iconos/gifOF_logo.png);
+}
+
+
+/* Botones de interacción de Captura */
+.themeLight .uploadGif {
+    background: #FFF4FD;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    color: #110038;
+}
+
+.themeLight .uploadGif:active {
+    background: #F0E5EE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    color: #110038;
+}
+
+/* Carga éxitosa del gif*/
+.themeLight .success-upload {
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.themeLight .success-title {
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+    color: #FFFFFF;
+}
+
+.themeLight .success {
+    background: #FFF4FD;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    color: #110038;
+}
+
+.themeLight .success:active {
+    background: #F0E5EE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    color: #110038;
+}
+
+.themeLight .gif-ready {
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.themeLight .gif-ready:active {
+    background: #E6BBE2;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+/* Subir Gifo*/
+.themeLight .cancel-btn {
+    background: #FFF4FD;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    color: #110038;
+}
+
+.themeLight .cancel-btn:active {
+    background: #F0E5EE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    color: #110038;
+}
+
+/*ProgressBar*/
+
+.themeLight .progress-bar {
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #FFFCFC, inset 2px 2px 0 0 #000000;
+}
+
+.themeLight .progress-bar-item {
+    background: #999999;
+
+}
+
+.themeLight .progress-bar-item-active {
+    background: #F7C9F3;
+}
+
+
+/* Playbar */
+.themeLight
+ .playbar {
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #FFFCFC, inset 2px 2px 0 0 #000000;
+}
+.themeLight
+ .playbar-item {
+    background: #999999;
+}
+.themeLight
+ .playbar-item-on {
+    background: #F7C9F3;
+ }
