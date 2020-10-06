@@ -175,7 +175,7 @@ async function progressBarAnimation() {
 
 
 function uploadGifReady() {
-    fetch('http://upload.giphy.com/v1/gifs?api_key=' + apiKey, {
+    fetch('https://upload.giphy.com/v1/gifs?api_key=' + apiKey, {
             method: 'POST',
             body: form,
         })
@@ -195,7 +195,7 @@ function uploadGifReady() {
 
 
 async function getGifDetails(id) {
-    fetch('http://api.giphy.com/v1/gifs/' + id + '?api_key=' + apiKey)
+    fetch('https://api.giphy.com/v1/gifs/' + id + '?api_key=' + apiKey)
         .then((respuestaApi) => {
             if (respuestaApi.status != 200)
                 alert("Ha ocurrido un error, intente nuevamente")
