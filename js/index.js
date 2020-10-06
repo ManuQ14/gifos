@@ -282,7 +282,7 @@ searchBar.addEventListener('input', () => {
 //Searchbar results function
 function getSearchResults(search) {
     const found =
-        fetch('http://api.giphy.com/v1/gifs/search?q=' + search + '&api_key=' + apiKey)
+        fetch('https://api.giphy.com/v1/gifs/search?q=' + search + '&api_key=' + apiKey)
         .then((response) => {
             return response.json()
         }).then(data => {
@@ -299,7 +299,7 @@ function getSearchResults(search) {
 //Search Suggestion function
 function getSuggestionsResults(search) {
     const found =
-        fetch('http://api.giphy.com/v1/tags/related/{term}?api_key=' + apiKey)
+        fetch('https://api.giphy.com/v1/tags/related/{term}?api_key=' + apiKey)
         .then((response) => {
             return response.json()
         }).then(data => {
@@ -318,7 +318,7 @@ function getSuggestionsResults(search) {
 
 //Trends results function
 function getTrendsResults() {
-    const found = fetch('http://api.giphy.com/v1/gifs/trending?api_key=' + apiKey)
+    const found = fetch('https://api.giphy.com/v1/gifs/trending?api_key=' + apiKey)
         .then((response) => {
             return response.json()
         }).then(data => {
