@@ -14,7 +14,6 @@ const trendsContainer = document.getElementsByClassName('trends-container')[0];
 const trendsElement = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
 const pageResults = document.getElementsByClassName('page-results')[0];
 const btnChild = document.getElementsByClassName('btn-related')[0];
-//const btn = document.getElementsByClassName('btn')[0];
 const btnRelated = document.getElementsByClassName('btn')[0];
 const searchResult = document.getElementsByClassName('search-result')[0];
 
