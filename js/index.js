@@ -71,7 +71,7 @@ searchButton.addEventListener("click", () => {
 
 //Funcion de autocompletar botones celestes post busqueda
 function autoComplete(relacionados) {
-    let url = `http://api.datamuse.com/sug?max=3&s=${relacionados}`
+    let url = `https://api.datamuse.com/sug?max=3&s=${relacionados}`;
     let word = fetch(url)
         .then((respuesta) => {
             return respuesta.json()
@@ -114,7 +114,7 @@ function searchAndAppendGifs(searchText) {
                 arrayTittle[i].classList.replace('title-box-div', 'hidden');
             }
             for (let i = 0; i < 10; i++) {
-                let clase = trendsElement[i]
+                let clase = trendsElement[i];
                 if (clase == "five" || clase == "ten") {
                     let gridItem = document.createElement("img");
                     let hashtagBottom = document.createElement('div');
