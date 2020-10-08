@@ -71,7 +71,7 @@ searchButton.addEventListener("click", () => {
 
 //Funcion de autocompletar botones celestes post busqueda
 function autoComplete(relacionados) {
-    let url = `https://api.datamuse.com/sug?max=3&s=${relacionados}`;
+    let url = "https://api.datamuse.com/sug?max=3&s=${relacionados}";
     let word = fetch(url)
         .then((respuesta) => {
             return respuesta.json()
