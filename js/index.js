@@ -7,14 +7,14 @@ const buttonLight = document.getElementById('day');
 const buttonContainer = document.getElementsByClassName("botonera");
 const searchButton = document.getElementsByClassName('search-button')[0];
 const searchBar = document.getElementById('search-bar')
-const suggestedTopics = ['Jonathan Van Ness', 'Sailor Mercury', 'Vaporwave', 'Glitter'];
+const suggestedTopics = ['doh', 'harry potter', 'game of thrones', 'programming'];
 const suggestionWrapper = document.getElementsByClassName('search-suggestion-wrapper')[0];
 const suggestionContainer = document.getElementsByClassName('suggestions-container')[0];
 const trendsContainer = document.getElementsByClassName('trends-container')[0];
 const trendsElement = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
 const pageResults = document.getElementsByClassName('page-results')[0];
 const btnChild = document.getElementsByClassName('btn-related')[0];
-const btn = document.getElementsByClassName('btn')[0];
+//const btn = document.getElementsByClassName('btn')[0];
 const btnRelated = document.getElementsByClassName('btn')[0];
 const searchResult = document.getElementsByClassName('search-result')[0];
 
@@ -60,26 +60,6 @@ window.addEventListener('load', () => {
 
 
 
-
-
-
-//Contenedor de los botones de sugerencia
-
-searchBar.addEventListener('input', event => {
-    if (searchBar.value) {
-        searchButton.classList.remove('button-disabled')
-        searchButton.classList.add('button-active')
-    } else {
-        searchButton.classList.remove('button-active')
-        searchButton.classList.add('button-disabled')
-    }
-    suggestionWrapper.classList.remove('hidden')
-});
-
-
-
-
-
 //Accion del botón de búsqueda
 
 searchButton.addEventListener("click", () => {
@@ -88,7 +68,30 @@ searchButton.addEventListener("click", () => {
     }
 })
 
+
+//Funcion de autocompletar botones celestes post busqueda
+function autoComplete(relacionados) {
+    let url = `http://api.datamuse.com/sug?max=3&s=${relacionados}`
+    let word = fetch(url)
+        .then((respuesta) => {
+            return respuesta.json()
+        })
+        .then((respuesta) => {
+            console.log(respuesta)
+            return respuesta;
+        })
+        .catch((error) => {
+            return error;
+        })
+    return word;
+}
+
+
+
+
+
 function searchAndAppendGifs(searchText) {
+
     getSearchResults(searchText)
         .then(result => {
             let titleResult = document.getElementsByClassName('title-result')[0]
@@ -215,11 +218,27 @@ window.addEventListener("load", () => {
 })
 
 
+//Contenedor de los botones de sugerencia
 
-
-
-
-
+searchBar.addEventListener('input', event => {
+    if (searchBar.value) {
+        searchButton.classList.remove('button-disabled')
+        searchButton.classList.add('button-active')
+    } else {
+        searchButton.classList.remove('button-active')
+        searchButton.classList.add('button-disabled')
+    }
+    autoComplete(searchBar.value).then((resultado) => {
+        suggestionWrapper.innerHTML = "";
+        resultado.forEach((item) => {
+            let search = document.createElement('div')
+            search.classList.add('search-result')
+            search.innerHTML = `<div class="another-result" data-search=${item.word}>#${item.word}</div>`
+            suggestionWrapper.appendChild(search);
+        })
+    })
+    suggestionWrapper.classList.remove('hidden')
+});
 
 
 //Botones de sugerencia post búsqueda
@@ -230,11 +249,31 @@ searchButton.addEventListener('click', () => {
         btnRelated.classList.add('btn')
         btnRelated.style.display = "flex";
     }
+    autoComplete(searchBar.value).then((resultado) => {
+        btnRelated.innerHTML = "";
+        resultado.forEach((item) => {
+            let search = document.createElement("div");
+            search.innerHTML = `<div class="btn-related" data-search=${item.word}>#${item.word}</div>`;
+            btnRelated.appendChild(search);
+        })
+    })
+
+
+
 })
 
-btn.addEventListener("click", (evento) => {
+//Botones azules de busqueda
+btnRelated.addEventListener("click", (evento) => {
     searchAndAppendGifs(evento.target.dataset.search)
-});
+    autoComplete(evento.target.dataset.search).then((resultado) => {
+        btnRelated.innerHTML = '';
+        resultado.forEach((item) => {
+            let search = document.createElement('div');
+            search.innerHTML = `<div class="btn-related" data-search=${item.word}>#${item.word}</div>`
+            btnRelated.appendChild(search);
+        })
+    })
+})
 
 
 searchBar.addEventListener('input', () => {
@@ -254,6 +293,7 @@ suggestionWrapper.addEventListener('mousedown', e => {
     searchBar.value = e.target.dataset.search
     suggestionWrapper.classList.add('hidden');
 })
+
 searchBar.addEventListener('blur', () => {
     suggestionWrapper.classList.add('hidden');
 })
